@@ -215,7 +215,7 @@ body::-webkit-scrollbar {
 }
 .list-head
 {
-    color: var(--bg-secondary);
+    color: rgb(255, 94, 0);
 }
 .contact-content 
 {
@@ -339,7 +339,7 @@ svg
 }
 #f1 
 {
-    background-color: var(--bg-secondary);
+    background-color: rgb(139, 243, 78);
 }
 .content 
 {
