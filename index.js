@@ -39,3 +39,66 @@ function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }
+
+// Cursor 
+jQuery(document).ready(function() {
+
+    let cursor=document.getElementById('cursor');
+          document.addEventListener('mousemove',function(e)
+          {
+              let x=e.pageX;
+              let y=e.pageY;
+              cursor.style.left=x+"px";
+              cursor.style.top=y+"px";
+          });
+  
+  });
+  
+  $('.animate').mouseover(function() {
+    $('#cursor').css({
+      "width": "100px",
+      "height": "100px",
+      "border": "2px dashed rgb(255, 94, 0)",
+      "animation": "animate 5s linear infinite"
+    }); 
+  });
+  $('.nav-link').mouseover(function() {
+    $('#cursor').css({
+      "display":"none",
+      "width": "100px",
+      "height": "100px",
+      "border": "2px dashed rgb(255, 94, 0)",
+      "animation": "animate 5s linear infinite"
+    }); 
+  });
+  
+  $('.nav-link').mouseleave(function() {
+    $('#cursor').css({
+      "display":"block",
+      "position": "absolute",
+      "width": "60px",
+      "height": "60px",
+      "border": "2px solid #000",
+      "animation":"none",
+      "box-sizing": "border-box",
+      "transition": "0.1s",
+      "transform": "translate(-50%,-50%)",
+      "border-radius": "50%",
+      "pointer-events": "none"
+    }); 
+  });
+  $('.animate').mouseleave(function() {
+    $('#cursor').css({
+      "position": "absolute",
+      "width": "60px",
+      "height": "60px",
+      "border": "2px solid #000",
+      "animation":"none",
+      "box-sizing": "border-box",
+      "transition": "0.1s",
+      "transform": "translate(-50%,-50%)",
+      "border-radius": "50%",
+      "pointer-events": "none"
+    }); 
+  });
+  

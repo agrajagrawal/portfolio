@@ -18,7 +18,10 @@ body {
 body::-webkit-scrollbar {
     display: none;
 }
-
+.main {
+    margin-left: 7rem;
+    padding: 1rem;
+}
 .navbar {
     position: fixed;
     background-color: var(--bg-secondary);
@@ -86,7 +89,32 @@ body::-webkit-scrollbar {
     
     color: var(--text-secondary);
 }
-
+.container
+{
+    height: 100vh;
+    width: 100%;
+}
+#cursor 
+{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    transition: 0.1s;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+#divider 
+{
+  padding:0;
+  height: 6px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-radius: 3px;
+  background-color: var(--bg-secondary);
+}
 @media only screen and (max-width: 600px) {
     .navbar-nav {
         position: fixed;
@@ -125,6 +153,10 @@ body::-webkit-scrollbar {
     .hamburger.active .bar:nth-child(3) {
         -webkit-transform: translateY(-8px) rotate(-45deg);
         transform: translateY(-8px) rotate(-45deg);
+    }
+    #cursor
+    {
+        display: none;
     }
 }
 
