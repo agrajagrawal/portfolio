@@ -25,8 +25,11 @@ body::-webkit-scrollbar {
 .navbar {
     position: fixed;
     background-color: var(--bg-secondary);
+    top: 0;
+    width: 7rem;
+    height: 100vh;
 }
-  
+
 .navbar-nav {
     list-style: none;
     padding: 0;
@@ -37,19 +40,6 @@ body::-webkit-scrollbar {
     height: 100%;
 }
 
-.hamburger {
-    display: none;
-}
-
-.bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: var(--text-primary);
-} 
 .nav-item {
     width: 100%;
 }
@@ -144,11 +134,10 @@ body::-webkit-scrollbar {
     width: 100%;
     display: flex;
     flex-direction: row;
-    
 }
 .home-content
 {
-    width: 38%;
+    width: 46%;
     margin-left: 2rem;
     display: flex;
     flex-direction: column;
@@ -160,9 +149,9 @@ body::-webkit-scrollbar {
 }
 .home-img
 {
-    width: 58%;
+    width: 50%;
     margin-left: 4%;
-   
+    padding-left: 8rem;
 }
 .home-img img 
 {
@@ -211,7 +200,7 @@ body::-webkit-scrollbar {
 .srno
 {
     text-decoration: underline;
-    opacity: 0.5;
+    opacity: 0.7;
 }
 .list-head
 {
@@ -352,58 +341,7 @@ svg
     font-size: 0.75rem;
     color: #000;
 }
-@media only screen and (max-width: 660px) {
-    .navbar-nav {
-        position: fixed;
-        left: -100%;
-        top: 1.5rem;
-        flex-direction: column;
-        background-color: var(--bg-secondary);
-        width: 100%;
-        border-radius: 10px;
-        text-align: center;
-        transition: 0.3s;
-        align-items: center;
-    }
-    .navbar-nav.active {
-        left: 0;
-    }
-    .hamburger
-    {
-        width: 100vw;
-        height: 2rem;
-        align-items: center;
-        display: block;
-        padding-top: 2px;
-        cursor: pointer;
-    }
 
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.active .bar:nth-child(1) {
-        -webkit-transform: translateY(8px) rotate(45deg);
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .hamburger.active .bar:nth-child(3) {
-        -webkit-transform: translateY(-8px) rotate(-45deg);
-        transform: translateY(-8px) rotate(-45deg);
-    }
-    #cursor
-    {
-        display: none;
-    }
-}
-
-@media only screen and (min-width: 660px) {
-    .navbar {
-      top: 0;
-      width: 7rem;
-      height: 100vh;
-    }
-}
 
 .dark {
     --text-primary: #b6b6b6;
