@@ -22,23 +22,6 @@ $("#themeButton").click(function(e){
     toggleTheme();
 });
 
-// navbar handling
-const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".navbar-nav");
-const navLink = document.querySelectorAll(".nav-link");
-
-hamburger.addEventListener("click", mobileMenu);
-navLink.forEach(n => n.addEventListener("click", closeMenu));
-
-function mobileMenu() {
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
-}
-
-function closeMenu() {
-    hamburger.classList.remove("active");
-    navMenu.classList.remove("active");
-}
 
 // Cursor 
 jQuery(document).ready(function() {
@@ -55,6 +38,7 @@ jQuery(document).ready(function() {
   });
   
   $('.animate').mouseover(function() {
+    console.log(2);
     $('#cursor').css({
       "width": "100px",
       "height": "100px",
@@ -102,3 +86,24 @@ jQuery(document).ready(function() {
     }); 
   });
   
+  $('.project-content').mouseover(function() {
+    $('#cursor').css({
+      "display":"none"
+    }); 
+  });
+  $('.project-content').mouseleave(function() {
+    $('#cursor').css({
+      "display":"block",
+      "position": "absolute",
+      "width": "60px",
+      "height": "60px",
+      "border": "2px solid #000",
+      "animation":"none",
+      "box-sizing": "border-box",
+      "transition": "0.1s",
+      "transform": "translate(-50%,-50%)",
+      "border-radius": "50%",
+      "pointer-events": "none",
+      "cursor":"pointer"
+    }); 
+  });
