@@ -227,7 +227,7 @@ body::-webkit-scrollbar {
     text-decoration: none;
     text-align: center;
 }
-.resume-link a
+.resume-link #button
 {
     font-weight: bold;
     text-decoration: none;
@@ -236,6 +236,12 @@ body::-webkit-scrollbar {
     padding: 1rem;
     background-color: #12F3E2;
     border-radius: 2rem;
+}
+.buttons 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 .footer 
 {
@@ -271,7 +277,7 @@ svg
 }
 #skills
 {
-    height: 34rem;
+    height: 40rem;
 }
 .skill 
 {
@@ -279,7 +285,7 @@ svg
     height: 8rem;
     width: 100%;
     color: var(--text-primary);
-    margin-top: 1rem;
+    margin-top: 3rem;
     margin-bottom: 1rem;
     font-size: 1.75rem;
     text-align: center;
@@ -329,6 +335,18 @@ svg
 #f1 
 {
     background-color: rgb(139, 243, 78);
+}
+.type span 
+{
+    padding:5px;
+    background-color: rgb(243, 78, 216);
+    border-radius: 20px;
+    color: #141418;
+    font-size: 1.2rem;
+}
+.contact-link a 
+{
+    text-decoration: none;
 }
 .content 
 {
