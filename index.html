@@ -4,12 +4,12 @@
     <title>maskmanaman</title>
     <script defer src="index.js"></script>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="index.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200&display=swap" rel="stylesheet">
-</head>
-<body>
+</head> 
+<body id="home">
   <div id="cursor"></div>
     <nav class="navbar">
         <ul class="navbar-nav">
@@ -26,8 +26,8 @@
           </li>
     
           <li class="nav-item">
-            <a href="#project" class="nav-link">
-              <span class="link-text"><h3>Project</h3></span>
+            <a href="#work" class="nav-link">
+              <span class="link-text"><h3>Work</h3></span>
             </a>
           </li>
     
@@ -126,7 +126,7 @@
     </nav>
     <main class="main">
       <div id="top"></div>
-       <div class="container" id="home">
+       <div class="container">
           <div class="heading">
               <span class="animate">000.Home 🏡</span>
           </div>
@@ -153,17 +153,75 @@
         </div>
        </div>
        <div id="divider"></div>
-      <div class="container" id="project">
+      <div class="container" id="work">
         <div class="heading">
-          <span class="animate">002.Project 🗃</span>
+          <span class="animate">002.Work 🗃</span>
         </div>
-        <div class="project-content">
-          <ul class="project-list">
-            <li class="list-head"><span class="srno">[000]</span><span>[Project-Name]</span><span>[Year]</span><span>[Link]</span></li>
-            <li><span class="srno">[001]</span><span>[Helping-Verb]</span><span>[2021]</span><span> <a href="https://github.com/luciferlabs/Helping-Verb">[Link]</a></span></li>
-            <li><span class="srno">[002]</span><span>[Hackdoc]</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[2020]</span><span><a href="https://github.com/maskmanlucifer/hackdoc">[Link]</a></span></li>
-            <li><span class="srno">[003]</span><span>[5-&-Dime]</span><span>&nbsp;&nbsp;&nbsp;&nbsp;[2020]</span><span><a href="https://github.com/maskmanlucifer/5-n-dime">[Link]</a></span></li>
-          </ul>
+        <div id="big-box">
+          <div class="work-head">
+          <span>Web Development</span>
+          </div>
+          <div class="buttons" id="webdcontent">
+            <div class="project-link">
+              <a id="button" href="project.html">Projects</a>
+            </div>
+            <div class="open-source-link">
+              <a id="button" href="open-source.html">Open-Source</a> 
+            </div>
+          </div>
+        </div>
+
+        <div id="big-box">
+          <div class="work-head">
+            <span>Competitive Programming</span>
+          </div>
+          <div class="list-coding" id="coding">
+            <div class="box-coding">
+              <div class="circle-coding">
+                 <div class="final-coding" id="f1-coding"></div>
+              </div>
+              <div class="content-coding">
+                <span><a href="">Codechef-Profile</a></span>
+                 <span>Max Rating: <span id="bold">2064</span></span>
+                 <span><span id="bold">178+</span> Problems Solved</span>
+              </div>
+            </div>
+            <div class="box-coding">
+              <div class="circle-coding">
+                 <div class="final-coding" id="f2-coding"></div>
+              </div>
+              <div class="content-coding">
+                <span><a href="">Codeforces-Profile</a></span>
+                <span>Max Rating: <span id="bold">1872</span></span>
+                <span><span id="bold">1700+</span> Problems Solved</span>
+                
+              </div>
+            </div>
+          </div>
+          <div class="list-coding" id="coding">
+            <div class="box-coding">
+              <div class="circle-coding">
+                 <div class="final-coding" id="f3-coding"></div>
+              </div>
+              <div class="content-coding">
+                <span><a href="">Atcoder-Profile</a></span>
+                <span>Max Rating: <span id="bold">1139</span></span>
+                <span><span id="bold">70+</span> Problems Solved</span>
+                
+              </div>
+            </div>
+            <div class="box-coding">
+              <div class="circle-coding">
+                 <div class="final-coding" id="f1-coding"></div>
+              </div>
+              <div class="content-coding">
+                <span><a href="">Leetcode-Profile</a></span>
+                <span>Max Rating: <span id="bold">Unrated</span></span>
+                <span><span id="bold">170+</span> Problems Solved</span>
+                
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div id="divider"></div>
@@ -215,7 +273,7 @@
           <div class="list">
             <div class="box">
                <div class="circle">
-                  <div class="final" id="f1"></div>
+                  <div class="final" id="f2"></div>
                </div>
                <div class="content">
                 <span>ExpresJS</span>
@@ -225,7 +283,7 @@
             </div>
             <div class="box">
              <div class="circle">
-               <div class="final" id="f2"></div>
+               <div class="final" id="f1"></div>
              </div>
              <div class="content">
               <span>NodeJS</span>
@@ -252,7 +310,7 @@
           <div class="list">
             <div class="box">
                <div class="circle">
-                  <div class="final" id="f1"></div>
+                  <div class="final" id="f3"></div>
                </div>
                <div class="content">
                 <span>DSA</span>
@@ -272,7 +330,7 @@
             </div>
            <div class="box">
              <div class="circle">
-               <div class="final" id="f3"></div>
+               <div class="final" id="f1"></div>
              </div>
              <div class="content">
               <span>Git</span>

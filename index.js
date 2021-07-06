@@ -12,7 +12,7 @@ bodyClass.add(theme);
 function toggleTheme() {
     const current = localStorage.getItem('theme');
     const next = themeMap[current];
-  
+   
     bodyClass.replace(current, next);
     localStorage.setItem('theme', next);
 }
@@ -60,8 +60,8 @@ jQuery(document).ready(function() {
     $('#cursor').css({
       "display":"block",
       "position": "absolute",
-      "width": "60px",
-      "height": "60px",
+      "width": "30px",
+      "height": "30px",
       "border": "2px solid #000",
       "animation":"none",
       "box-sizing": "border-box",
@@ -74,8 +74,8 @@ jQuery(document).ready(function() {
   $('.animate').mouseleave(function() {
     $('#cursor').css({
       "position": "absolute",
-      "width": "60px",
-      "height": "60px",
+      "width": "30px",
+      "height": "30px",
       "border": "2px solid #000",
       "animation":"none",
       "box-sizing": "border-box",
@@ -95,8 +95,8 @@ jQuery(document).ready(function() {
     $('#cursor').css({
       "display":"block",
       "position": "absolute",
-      "width": "60px",
-      "height": "60px",
+      "width": "30px",
+      "height": "30px",
       "border": "2px solid #000",
       "animation":"none",
       "box-sizing": "border-box",
