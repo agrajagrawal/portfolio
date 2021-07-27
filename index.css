@@ -589,3 +589,10 @@ svg
 .easy_hack {
     height: 220px;
 }
+.pdes a {
+    text-decoration: none;
+    color: rgb(255, 94, 0);
+}
+.pdes h2 {
+    color: rgb(255, 94, 0);
+}
