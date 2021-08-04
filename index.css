@@ -7,7 +7,9 @@
     --bg-secondary: #141418;
     font-family: 'Roboto Mono', monospace;
 } 
-
+html {
+    scroll-behavior: smooth;
+}
 body {
     color: black;
     background-color: var(--bg-primary);
