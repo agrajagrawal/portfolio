@@ -22,6 +22,32 @@ $("#themeButton").click(function(e){
     toggleTheme();
 });
 
+// Dynamic Experience Years Calculate
+var currentTime = new Date()
+var year = currentTime.getFullYear();
+var gap = year - 2021; // Gap is the no of year between current year and the year in which site was builded
+console.log(year);
+$(".dsa-experience").html(`${gap + 3} Years`);
+$(".algorithm-experience").html(`${gap + 3} Years`);
+$(".cpp-experience").html(`${gap + 3} Years`);
+
+$(".ejs-experience").html(`${gap + 2} Years`);
+$(".js-experience").html(`${gap + 2} Years`);
+$(".html-experience").html(`${gap + 3} Years`);
+
+$(".nodejs-experience").html(`${gap + 2} Years`);
+$(".react-experience").html(`${gap + 0} Years`);
+$(".mongo-experience").html(`${gap + 2} Years`);
+
+$(".api-experience").html(`${gap + 2} Years`);
+$(".scrapping-experience").html(`${gap + 1} Years`);
+$(".git-experience").html(`${gap + 2} Years`);
+
+
+
+
+
+
 
 // Cursor 
 jQuery(document).ready(function() {
